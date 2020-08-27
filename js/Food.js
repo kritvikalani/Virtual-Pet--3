@@ -16,13 +16,22 @@ class food{
         }
     }
     getFedTime(lastFed) {
-        this.ladtFed = ladtFed;
+        this.ladtFed = lastFed;
+    }
+    bedroom() {
+        background(bedroom, 550, 500)
+    }
+    garden() {
+        background(garden, 550, 500)
+    }
+    washroom() {
+        background(washroom, 550, 500)
     }
     display() {
         var x=80, y=100;
 
         imageMode(CENTER);
-        image(this.image, 720, 220, 70, 70);
+        image(this.image, 150, 200, 70, 70);
 
         if (this.foodStock!=0) {
             for(var i=0; i<this.foodStock; i++) {
